@@ -1,0 +1,38 @@
+<!-- <html>
+  <body>
+    <div id="app"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script type="text/javascript">
+      const app= document.getElementById("app")
+      const header= document.createElement("h1")
+      const text= "Legacore Solutions"
+      const headerContent= document.createTextNode(text)
+      header.appendChild(headerContent)
+      app.appendChild(header)
+      </script>
+  </body>
+</html> -->
+
+<!-- 1. Instead of directly manipulating the DOM elements with plain JS, added ReactDOM.createRoot()to target specific DOM & created a root to dosplay React components 
+2. Added root.render() to render react code.
+3. Informed Babel what code to transform by changing the script type to type=text/jsx -->
+
+<html>
+  <body>
+    <div id="apps"></div>
+     
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <script type="text/jsx">
+      const apps = document.getElementById('apps');
+      const root = ReactDOM.createRoot(apps);
+      root.render(<h2>Legacore Infomatics</h2>);
+      
+      </script>
+      </script>
+  </body>
+</html>
+

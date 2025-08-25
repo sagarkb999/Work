@@ -1,0 +1,10 @@
+<script type="text/jsx">
+  const app = document.getElementById('app');
+ 
+  function header() {
+    return <h1>Develop. Preview. Ship.</h1>;
+  }
+ 
+  const root = ReactDOM.createRoot(app);
+  root.render(<h1>Develop. Preview. Ship.</h1>);
+</script>
