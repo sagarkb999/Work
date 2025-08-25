@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Listings</title>
+  <style>
+    article {
+      border: 2px solid #333;   /* Border color */
+      border-radius: 10px;      /* Rounded corners */
+      padding: 15px;            /* Space inside */
+      margin: 15px 0;           /* Space between listings */
+      background-color: #f9f9f9; /* Light background */
+    }
+
+    #filterContainer {
+      margin: 20px 0;       
+      padding: 10px;        
+      border: 2px solid #666;
+      border-radius: 8px;
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+  <header></header>
+
+  <div id="filterContainer">
+    <label for="jobFilter">Filter by Title: </label>
+    <select id="jobFilter">
+      <option value="all">All</option>
+    </select>
+  </div>
+
+  <section></section>
+
+  <script src="filterTask.js"></script>
+  <script>
+    populate();
+  </script>
+</body>
+</html>
