@@ -43,3 +43,4 @@ console.log(single.toUpperCase());
 console.log(single.toLowerCase());
 console.log(single.replace("Single", "Triple"));
 console.log(single.replaceAll("quotes", "commas"));
+// sagar
