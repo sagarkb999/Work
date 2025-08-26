@@ -79,7 +79,56 @@ console.log(doubled)
 function isLong(val){
     return val.length > 8
 }
-
 const long= cities.filter(isLong)
 console.log(long)
 
+const data = "Manchester,London,Liverpool,Birmingham,Leeds,Carlisle";
+const city= data.split(",")
+console.log(city)
+
+console.log(city.length)
+console.log(city[city.length-1]) // Carlisle
+
+const joined= city.join("-")
+console.log(joined)
+
+const arr= joined.split("-")
+const str= arr.toString()
+console.log(str)
+
+//Array CHallenge
+
+// Part 1
+products= ["Underpants:6.99",
+"Socks:5.99",
+"T-shirt:14.99",
+"Trousers:31.99",
+"Shoes:23.99"]
+
+// Part 2
+let sum=0;
+for(const prod of products){
+  const prodsplit= prod.split(":")
+  const name= prodsplit[0]
+  const price= Number(prodsplit[1])
+  console.log(`${name} - ${price}`)
+  sum+= price
+  console.log(sum)
+
+}
+// Part 3
+
+// Part 4
+
+// Part 5
+// let itemText = 0;
+
+// const listItem = document.createElement("li");
+// listItem.textContent = itemText;
+// list.appendChild(listItem);
+
+// // Part 6
+
+// totalBox.textContent = `Total: $${total.toFixed(2)}`;
+cities.unshift("London")
+console.log(cities)

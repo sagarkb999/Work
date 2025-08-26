@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Story Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type="text"] {
+      margin-left: 10px;
+      padding: 5px;
+    }
+    .radio-group {
+      margin-top: 10px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 6px 12px;
+    }
+    .story {
+      background-color: orange;
+      padding: 15px;
+      margin-top: 15px;
+      width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <label for="customname">Enter custom name:</label>
+  <input id="customname" type="text" placeholder="Your name" value="">
+
+  <div class="radio-group">
+    <label><input type="radio" name="ukus" value="us"> US</label>
+    <label><input type="radio" name="ukus" value="uk" checked> UK</label>
+  </div>
+
+  <button onclick="generateStory()">Generate random story</button>
+
+  <div id="story" class="story"></div>
+
+  <script>
+    function generateStory() {
+      const name = document.getElementById("customname").value || "Sagar";
+      const storyBox = document.getElementById("story");
+
+      let storyText = 
+        "It was 34 centigrade outside, so Big Daddy went for a walk. " +
+        "When they got to Disneyland, they stared in horror for a few moments, " +
+        "then melted into a puddle on the sidewalk. " +
+        name + " saw the whole thing, but was not surprised — Big Daddy weighs 21 stone, and it was a hot day.";
+
+      storyBox.textContent = storyText;
+    }
+  </script>
+  <script src="./main.js"></script>
+</body>
+</html>
