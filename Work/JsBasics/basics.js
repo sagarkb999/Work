@@ -43,3 +43,43 @@ console.log(single.toUpperCase());
 console.log(single.toLowerCase());
 console.log(single.replace("Single", "Triple"));
 console.log(single.replaceAll("quotes", "commas"));
+
+
+// Arrays
+const shopping= ["bread", "milk", "cheese", "hummus", "noodles", ["Rajalaxmi","Aditi", "Satya",  "Sagar"]]
+
+console.log(shopping.length) // 5
+console.log(shopping[5][2]) // Satya
+console.log(shopping.indexOf("Sagar")) // -1
+
+shopping.push("pizza")
+console.log(shopping)
+shopping.pop("noodles")
+console.log(shopping) // ["bread", "milk", "cheese", "hummus", "noodles", ["Rajalaxmi","Aditi", "Satya",  "Sagar"]]
+shopping.shift()
+console.log(shopping)// ["milk", "cheese", "hummus", "noodles", ["Rajalaxmi","Aditi", "Satya",  "Sagar"]]
+
+// I want to remove Edinburgh
+const cities = ["Manchester", "Liverpool", "Edinburgh", "Carlisle", "Amsterdam"];
+// const edin= cities.indexOf("Edinburgh")
+// cities.splice(edin, 3)
+console.log(cities) // [ 'Manchester', 'Liverpool' ]
+
+for (const items of shopping){
+    console.log(items)
+}
+
+function doubles(number){
+    return number *2;
+}
+const nums = [5,10,15];
+const doubled= nums.map(doubles)
+console.log(doubled)
+
+function isLong(val){
+    return val.length > 8
+}
+
+const long= cities.filter(isLong)
+console.log(long)
+
