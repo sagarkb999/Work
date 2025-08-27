@@ -1,62 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Random Story Generator</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-    label {
-      font-weight: bold;
-    }
-    input[type="text"] {
-      margin-left: 10px;
-      padding: 5px;
-    }
-    .radio-group {
-      margin-top: 10px;
-    }
-    button {
-      margin-top: 10px;
-      padding: 6px 12px;
-    }
-    .story {
-      background-color: orange;
-      padding: 15px;
-      margin-top: 15px;
-      width: 400px;
-    }
-  </style>
-</head>
-<body>
-  <label for="customname">Enter custom name:</label>
-  <input id="customname" type="text" placeholder="Your name" value="">
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
 
-  <div class="radio-group">
-    <label><input type="radio" name="ukus" value="us"> US</label>
-    <label><input type="radio" name="ukus" value="uk" checked> UK</label>
-  </div>
+    <title>Silly story generator</title>
 
-  <button onclick="generateStory()">Generate random story</button>
+    <style>
+      body {
+        font-family: helvetica, sans-serif;
+        width: 350px;
+      }
 
-  <div id="story" class="story"></div>
+      label {
+        font-weight: bold;
+      }
 
-  <script>
-    function generateStory() {
-      const name = document.getElementById("customname").value || "Sagar";
-      const storyBox = document.getElementById("story");
+      div {
+        padding-bottom: 20px;
+      }
 
-      let storyText = 
-        "It was 34 centigrade outside, so Big Daddy went for a walk. " +
-        "When they got to Disneyland, they stared in horror for a few moments, " +
-        "then melted into a puddle on the sidewalk. " +
-        name + " saw the whole thing, but was not surprised — Big Daddy weighs 21 stone, and it was a hot day.";
+      input[type="text"] {
+        padding: 5px;
+        width: 150px;
+      }
 
-      storyBox.textContent = storyText;
-    }
-  </script>
-  <script src="./main.js"></script>
-</body>
+      p {
+        background: #ffc125;
+        color: #5e2612;
+        padding: 10px;
+        visibility: hidden;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <label for="customname">Enter custom name:</label>
+      <input id="customname" type="text" placeholder="" />
+    </div>
+    <div>
+      <label for="us">US</label
+      ><input id="us" type="radio" name="ukus" value="us" checked />
+      <label for="uk">UK</label
+      ><input id="uk" type="radio" name="ukus" value="uk" />
+    </div>
+    <div>
+      <button class="randomize">Generate random story</button>
+    </div>
+    <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
+    <p class="story"></p>
+
+    <script src="./main.js"></script>
+  </body>
 </html>
