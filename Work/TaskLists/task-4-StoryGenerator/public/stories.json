@@ -1,0 +1,26 @@
+{
+  "stories": [
+    {
+      "id": 1,
+      "storyText": "It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.",
+      "insertX": ["Willy the Goblin", "Big Daddy", "Father Christmas"],
+      "insertY": ["the soup kitchen", "Disneyland", "the White House"],
+      "insertZ": [
+        "spontaneously combusted",
+        "melted into a puddle on the sidewalk",
+        "turned into a slug and crawled away"
+      ]
+    },
+    {
+      "id": 2,
+      "storyText": "Once upon a time, :insertx: traveled to :inserty: and suddenly :insertz:. Everyone laughed, except Bob, who was shocked!",
+      "insertX": ["Alice", "The Mad Hatter", "Sherlock Holmes"],
+      "insertY": ["Wonderland", "Baker Street", "the Moon"],
+      "insertZ": [
+        "vanished into thin air",
+        "danced all night",
+        "forgot their own name"
+      ]
+    }
+  ]
+}
