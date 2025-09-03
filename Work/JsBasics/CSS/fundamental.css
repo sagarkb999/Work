@@ -1,0 +1,104 @@
+/* Base styles */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  font:  Arial, Helvetica, sans-serif;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Logo / Header */
+.logo {
+  font-size: 2.2em;
+  font-weight: bold;
+  text-align: left;
+  padding: 40px 20px;
+  color: #222;
+}
+
+/* Navigation */
+nav {
+  background-color: #000;
+  padding: 0.5em;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8em 1.2em;
+  display: block;
+  transition: background 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+nav a:hover {
+  background: #444;
+  border-radius: 4px;
+}
+
+/* Main layout */
+.grid {
+  margin: 0 auto;
+  padding: 70px;
+  max-width: 1100px;
+  display: flex;
+  gap: 30px;
+}
+
+article {
+  flex: 3;
+}
+
+aside {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 15px;
+  border-left: 3px solid #eee;
+  border-radius: 8px;
+}
+
+/* Blog post image */
+.feature {
+  float: left;
+  margin: 0 20px 15px 0;
+  width: 220px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Photography gallery */
+.photos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.photos img {
+  width: 100%;
+  border-radius: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photos img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}

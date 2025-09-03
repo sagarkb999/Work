@@ -1,0 +1,24 @@
+{
+  "images": [
+    {
+      "src": "pic1.jpg",
+      "alt": "Closeup of a human eye"
+    },
+    {
+      "src": "pic2.jpg",
+      "alt": "Rock that looks like a wave"
+    },
+    {
+      "src": "pic3.jpg",
+      "alt": "Purple and white pansies"
+    },
+    {
+      "src": "pic4.jpg",
+      "alt": "Egyptian wall painting"
+    },
+    {
+      "src": "pic5.jpg",
+      "alt": "Large moth on a leaf"
+    }
+  ]
+}

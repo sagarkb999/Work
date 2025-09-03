@@ -1,0 +1,81 @@
+
+html {
+  font-family: sans-serif;
+  font-size: 10px; /* 1em = 10px */
+}
+
+body {
+  margin: 0;
+  background: #333;
+}
+
+/* Card container styles */
+.card {
+  width: 35em;           /* 350px */
+  height: 22em;          /* 220px */
+  background-color: red;
+  border: 0.2em solid black;
+  border-radius: 1.5em;
+  margin: 5em auto;
+  overflow: hidden;
+}
+
+/* Header and Footer styles */
+.card header {
+  background: linear-gradient(to bottom, #333, #999);
+  border-radius: 1.3em 1.3em 0 0;
+  padding: 1em;
+  height: 3em;           /* 30px content */
+}
+
+.card footer {
+  background: linear-gradient(to bottom, #999, #333);
+  border-radius: 0 0 1.3em 1.3em;
+  padding: 0.01em;
+  height: 3em;           /* 30px content */
+}
+
+/* Main business card contents */
+.card article {
+  height: 12em;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1em;
+  display: flex;
+  align-items: center;    /* vertical centering */
+  justify-content: space-between; /* text on left, image on right */
+}
+
+/* Profile image */
+.card article img {
+  width: 8em;       
+  height: auto;     
+  border-radius: 0.5em;
+  flex-shrink: 0;   
+  margin-left: 1em; 
+}
+
+/* Reset margins */
+.card h2, .card p {
+  margin: 0;
+}
+
+/* Header title */
+.card header h2 {
+  font-size: 2em;     /* 20px */
+  line-height: 3em;   /* centers text vertically in 30px box */
+  color: white;
+}
+
+/* Footer paragraph */
+.card footer p {
+  font-size: 1.5em;   /* 15px */
+  line-height: 1.5em;   /* centers text vertically in 30px box */
+  color: white;
+}
+
+/* Article text */
+.card article p {
+  flex: 1;             /* take available space */
+  padding-right: 1em;  /* small space before image */
+  color: #eee;
+}
