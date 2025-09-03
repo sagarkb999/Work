@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailWind</title>
+</head>
+<body>
+    <!-- Basic Styling -->
+    <div class="bg-amber-400 h-10 w-2xs border-4 rounded-3xl my-4 p-5">
+  <h1 class="text-center font-mono font-extrabold">Hello World</h1>
+</div>
+<!-- FLEX -->
+<div class="flex flex-col justify-center items-center space-y-6">
+  <div class="h-10 w-2/4 rounded-3xl border-4 bg-amber-400 p-3">Hello Sagar</div>
+  <div class="h-10 w-2/4 rounded-3xl border-4 bg-green-400 p-3">Hello Satya</div>
+  <div class="h-10 w-2/4 rounded-3xl border-4 bg-red-500 p-3">Hello Sandip</div>
+</div>
+<!-- CSS GRID -->
+<div class="grid grid-col-3 gap-3 mt-2 mt-3">
+  <div class="h-10 rounded-3xl border-4 bg-amber-400 p-3">Hello Sagar</div>
+  <div class="h-10 rounded-3xl border-4 bg-green-400 p-3">Hello Satya</div>
+  <div class="h-10 rounded-3xl border-4 bg-red-500 p-3">Hello Sandip</div>
+</div>
+
+<!-- Media Queries(Allows us to change depending upon the screen width) & Responsive Design -->
+<div class="min-[240px]:bg-amber-950 sm:bg-amber-300 md:bg-amber-500">
+  <p class="text-blue-800">More than 768 pixels</p>
+</div>
+
+<!-- Dark Mode -->
+ <div class="bg-white dark:bg-black text-black dark:text-amber-300 ">
+  Dark Mode Enabled</div>
+            <!-- Toggle Dark Mode -->
+  
+<!-- CUSTOM STYLES (config-to make custom reusable styles)-->
+<div class="text-[30px] text-amber-500">Urban Edge</div>
+we want to use config:
+in css under styles:-
+ --color-urban: #923F29
+in html:- 
+div class="text-[30px] text-urban">Urban Edge</div>
+
+
+<!-- Using Components & Directives -->
+ instead of writting in html:-
+ <div class="m-10 rounded-lg bg-white px-6 py-8 shadow-xl ring-1 ring-slate-900/5">Urban Edge</div>
+
+ we can write in html:-
+ <div class="card">Urban Edge</div>
+
+and in CSS:-
+@layer components{
+  .card{
+    @apply m-10 rounded-lg bg-white px-6 py-8 shadow-xl ring-1 ring-slate-900/5
+  }
+}
+
+            <!-- Base -->
+html:-
+<div>
+    <h3>
+        .....
+    </h3>
+    <p>....
+
+    </p>
+
+in css:-
+@layer base{
+    h3{
+        css styling.....
+    }
+    p{.........}
+}
+
+<!-- TIPS -->
+ we can add multiple layers to class
+
+ shadcn.ui (https://ui.shadcn.com/)
+
+ 1. Auto transition of text acc to screen size
+ <p class="text-[min(10vw,70px)]">Something Fluid</p>
+2. FIle input`
+3. text selection
+
+
+</div>
+</body>
+</html>
