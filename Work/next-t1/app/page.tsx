@@ -1,15 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function home(){
+export default function Home() {
   return (
     <div>
-      <h1>Hello from Index Page(Page.tsx)</h1>
-       {/*<a href="/dashboard">Dashboard</a> This causes the UX to reload on clicking dashbard which isn't ideal. We want client side navigation. We use link component for that*/}
+      <h1 className="text-2xl font-bold mb-4">Welcome to my Blog</h1>
 
-       <Link href="/dashboard">Dashboard</Link>
-       <Link href="/abc">ABC Route</Link>
-       
+      <Image
+        src="/images/sample.jpg"
+        width={1060}
+        height={620}
+        alt="Welcome Photo"
+        className="rounded-lg shadow-md"
+      />
+
+      {/* <div className="mt-6 flex gap-4">
+        <Link className="navStyle" href="/dashboard/customers">Customer Page</Link>
+        <Link className="navStyle" href="/dashboard/invoices">Invoices Page</Link>
+      </div> */}
     </div>
-  )
+  );
 }

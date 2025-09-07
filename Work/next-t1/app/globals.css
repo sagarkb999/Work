@@ -1,5 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+/* @import '@/app/ui/global.css'; */
+
 
 @custom-variant dark (&:is(.dark *));
 
@@ -117,6 +119,15 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+  @apply bg-background text-foreground bg-cover bg-center bg-no-repeat bg-fixed;
+  min-height: 100vh;
+  background-image: url('/images/sample.jpeg'); /* keep last */
+}
+
+}
+
+@layer components{
+  .navStyle{
+    @apply text-sm font-medium hover:text-blue-500 transition-colors;
   }
 }
