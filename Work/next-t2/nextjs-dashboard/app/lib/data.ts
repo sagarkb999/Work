@@ -11,6 +11,9 @@ import { formatCurrency } from './utils';
 
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
 
+
+
+
 export async function fetchRevenue() {
   try {
     // Artificially delay a response for demo purposes.
@@ -29,6 +32,9 @@ export async function fetchRevenue() {
     throw new Error('Failed to fetch revenue data.');
   }
 }
+
+
+
 
 export async function fetchLatestInvoices() {
   try {
@@ -49,6 +55,9 @@ export async function fetchLatestInvoices() {
     throw new Error('Failed to fetch the latest invoices.');
   }
 }
+
+
+
 
 export async function fetchCardData() {
   try {
