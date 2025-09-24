@@ -19,6 +19,6 @@ const TeacherPage = async () => {
       </div>
     </div>
   );
-};
+}; 
 
 export default TeacherPage;

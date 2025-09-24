@@ -4,6 +4,7 @@ import { Calendar, momentLocalizer, View, Views } from "react-big-calendar";
 import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import { useState } from "react";
+import { adjustScheduleToCurrentWeek } from "@/lib/utils";
 
 const localizer = momentLocalizer(moment);
 
@@ -17,6 +18,7 @@ const BigCalendar = ({
   const handleOnChangeView = (selectedView: View) => {
     setView(selectedView);
   };
+
 
   return (
     <Calendar
